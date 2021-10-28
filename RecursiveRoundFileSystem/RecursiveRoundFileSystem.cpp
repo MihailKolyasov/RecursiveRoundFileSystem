@@ -27,11 +27,10 @@ void scandir(const char* dirname, TreeNode* Root)
 {
     DIR* dir;
     struct dirent* ent;
-
-    printf("Read of '%s':\n", dirname);
+    std::cout << "Search in " << dirname << std::endl;
     if ((dir = opendir(dirname)) == NULL)
     {
-        std::cout << "Do not open dir" << std::endl;
+        std::cout << "Do not open dir." << std::endl;
         return;
     }
     while ((ent = readdir(dir)) != NULL)
@@ -86,7 +85,6 @@ int main(int argc, char* argv[])
     }
     TreeNode* Root = nullptr;
     Add(request, Root);
-    print(Root);
     try
     {
         if (!ChekRequest(Root))
