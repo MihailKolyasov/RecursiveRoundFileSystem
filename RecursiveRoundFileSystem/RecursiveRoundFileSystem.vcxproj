@@ -147,10 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="FileClass.cpp" />
     <ClCompile Include="RecursiveRoundFileSystem.cpp" />
-    <ClCompile Include="Request.cpp" />
-    <ClCompile Include="TreeRequests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FileClass.h" />
